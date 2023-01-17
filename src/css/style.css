@@ -1,0 +1,155 @@
+body{
+    background-image: url(../imagens/pixel-rain.gif); /*colocar um foto de papel de parede*/
+    background-repeat: no-repeat; /*para ser uma foto so para todo o site*/
+    background-size: cover; 
+    background-position: center; /*centraliza a foto*/
+    font-family: 'VT323', monospace; /* usar essa foto se n der usar outra */
+    display: flex; /* colocar na div pai para poder deixar os filhos em qualquer local */
+    justify-content: center; /* colocar os elementos no centro*/
+    align-items: center; /* colocar os elementos no centro*/
+    min-height: 100vh; /* colocar a altura minina para n cortar nada em 100*/
+    color: white;
+    font-size: 20px;
+}
+
+.cartao{
+    background-color: rgb(0, 0, 0);
+    width: 450px;
+    border: 1px solid rgb(0, 225, 255);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.abas img{
+    width: 30px;
+}
+
+.cartao .minhas-informacoes{
+   padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 100px;
+    border: 2.5px solid #ea49ff;
+    width: 125px;
+    height: 125px;
+
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 25px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.cartao .conteudo{
+    margin-top: 10px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out ;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #313131;
+}
+
+.cartao .abas .aba:hover{
+    background-color: rgb(112, 111, 111);
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+    background-color: #313131;
+}
+
+.informacoes-abas .subti{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.informacoes-abas .desc{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.informacoes-abas .desc span{
+    color:  #ea49ff; 
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+
+}
+
+.redes li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out ;
+}
+
+.redes .instagram{
+    background-color: rgb(247, 161, 177);
+}
+
+.redes .curriculo{
+    background-color: rgb(89, 89, 246);
+}
+
+.redes .github{
+    background-color: rgb(0, 0, 0);
+}
+
+.redes .linkedin{
+    background-color: rgb(26, 87, 26);
+}
+
+.redes li a:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
